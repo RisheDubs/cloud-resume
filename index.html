@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rishekesh B | Graduate Software Development Engineer</title>
+  <meta name="description" content="Resume of Rishekesh B, graduate software development engineer in Melbourne with hands-on AWS experience.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <h1>Rishekesh B</h1>
+      <p class="role">Graduate software development engineer in Melbourne, building and operating software on Linux and AWS.</p>
+      <ul class="contact">
+        <li><a href="mailto:rishekeshris@gmail.com">rishekeshris@gmail.com</a></li>
+        <li><a href="https://linkedin.com/in/rishekesh-b-95641120b">linkedin.com/in/rishekesh-b-95641120b</a></li>
+      </ul>
+    </header>
+
+    <aside class="side">
+      <section>
+        <h2>Work rights</h2>
+        <p>Full and unrestricted Australian work rights, Subclass 485 Graduate Visa. No sponsorship required.</p>
+      </section>
+      <section>
+        <h2>Availability</h2>
+        <p>Able to start immediately.</p>
+      </section>
+      <section>
+        <h2>Location</h2>
+        <p>Melbourne, VIC. Open to relocation </p>
+      </section>
+      <section>
+        <h2>Graduate eligibility</h2>
+        <p>Completed postgraduate studies December 2025, within 24 months of applying.</p>
+      </section>
+      <section class="counter" aria-live="polite">
+        <h2>Visitors</h2>
+        <p id="visitor-count" class="count">—</p>
+        <p class="muted small">Counted by Lambda and DynamoDB.</p>
+      </section>
+    </aside>
+
+    <main class="main">
+      <section>
+        <h2>Summary</h2>
+        <p>Software engineer with a Bachelor of Engineering in Computer Science and a Master of Science in Information Technology, completed December 2025. Builds and operates software end to end on Linux: requirements through design, implementation, code review, testing, deployment and ongoing operation of what ships. Hands-on production experience across AWS, including S3, EC2, RDS, Lambda, IAM and CloudWatch. Has implemented a Unix shell and an HTTP server from first principles, working directly with processes, signals, sockets and concurrency.</p>
+      </section>
+
+      <section>
+        <h2>Experience</h2>
+        <article class="entry">
+          <h3>Software Developer, Confidential Client</h3>
+          <p class="muted small">Jan 2026 – present · Melbourne, VIC</p>
+          <ul>
+            <li>Own software end to end, from working with stakeholders to clarify requirements through technical design, implementation, code review, testing, deployment and ongoing operation after release.</li>
+            <li>Build backend services and RESTful APIs, applying object-oriented design and structured error handling so failures are contained rather than propagated.</li>
+            <li>Investigate production issues from logs and structured debugging, then follow the problem through to a fix rather than handing it on.</li>
+            <li>Give and act on feedback in code reviews and design reviews, working with senior engineers to raise the quality of what ships.</li>
+            <li>Write and maintain technical documentation covering system design, API contracts, data flows and deployment procedures.</li>
+          </ul>
+        </article>
+        <article class="entry">
+          <h3>Software Developer (Cloud), <a href = "https://ploviti.lovable.app/" target = "_blank" rel="noopener noreferrer"> Ploviti </a></h3>
+          <p class="muted small">Jul 2025 – Jan 2026 · Melbourne, VIC</p>
+          <ul>
+            <li>Delivered a greenfield cloud platform from an empty AWS account to a working system in 2 months as one of a 5-engineer team, owning the AWS infrastructure and backend API layer.</li>
+            <li>Provisioned and integrated S3, Amazon Rekognition, PostgreSQL RDS, least-privilege IAM roles and CloudWatch within a VPC-secured environment, then operated what was built.</li>
+            <li>Diagnosed a search failure as a data representation problem rather than a tuning problem, and replaced exact keyword matching with vector-embedding retrieval using pgvector, eliminating a class of false negatives that no amount of text normalisation could fix.</li>
+            <li>Held API response times to a consistent sub-200 millisecond range, measured on CloudWatch dashboards, through query optimisation, targeted indexing and a data access layer structured around actual read patterns.</li>
+            <li>Removed the application server from the file upload path entirely using presigned S3 workflows with least-privilege scoping, reducing attack surface and server load.</li>
+            <li>Automated build, test and deployment through GitHub Actions with Docker-containerised services and rollback on failure, giving the team repeatable releases.</li>
+            <li>Validated the full ingestion and processing pipeline end to end against a 200-record dataset sized to expected daily volume before launch, and configured metrics and alarms so faults surfaced from monitoring rather than from users.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section>
+        <h2>Projects</h2>
+        <article class="entry">
+          <h3>Concurrent HTTP/1.1 web server</h3>
+          <p class="muted small">Python, TCP sockets, multithreading, Linux, AWS EC2, Application Load Balancer, GitHub Actions, CloudWatch</p>
+          <ul>
+            <li>Implemented the HTTP/1.1 protocol from first principles with no web framework: socket setup, request parsing, response construction and static file serving.</li>
+            <li>Handled concurrent clients through a threaded connection model, reasoning about shared state, blocking calls and connection lifecycle.</li>
+            <li>Deployed on Linux to EC2 behind an Application Load Balancer with an automated pipeline and CloudWatch monitoring, taking it from code to a running, observable service.</li>
+          </ul>
+        </article>
+        <article class="entry">
+          <h3>Custom Unix shell</h3>
+          <p class="muted small">Python, Linux, Unix system calls, process management, Git</p>
+          <ul>
+            <li>Built a shell from scratch handling command parsing, piping, input and output redirection, background execution and built-in commands including cd, export and history.</li>
+            <li>Worked at the system-call layer: process creation and reaping via fork, exec and wait, file descriptor duplication for redirection, pipes for inter-process communication, and signal handling for SIGINT and SIGTERM so processes terminated cleanly without orphaning children.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section>
+        <h2>Technical skills</h2>
+        <dl class="skills">
+          <dt>Languages</dt>
+          <dd>Python, JavaScript (ES6+), Node.js, SQL, Bash. Java at academic and self-directed level.</dd>
+          <dt>CS fundamentals</dt>
+          <dd>Data structures and algorithms, object-oriented design, concurrency, operating systems, computer networks, complexity analysis.</dd>
+          <dt>Linux and systems</dt>
+          <dd>Linux development environment, Unix system calls, process management (fork, exec, wait), signal handling, file descriptors, inter-process communication, pipes, TCP sockets, multithreading, shell scripting.</dd>
+          <dt>Amazon Web Services</dt>
+          <dd>S3, EC2, RDS (Aurora, PostgreSQL), Lambda, IAM, CloudWatch, CloudTrail, Rekognition, ECS, VPC, Application Load Balancer, presigned URL workflows, least-privilege IAM.</dd>
+          <dt>Relational databases</dt>
+          <dd>PostgreSQL, MySQL, schema design, indexing strategies, query optimisation, data modelling, pgvector.</dd>
+          <dt>Distributed systems</dt>
+          <dd>RESTful API design, microservices, event-driven architecture, load balancing, service monitoring and alerting, fault detection.</dd>
+          <dt>Tooling and delivery</dt>
+          <dd>Git, GitHub, GitHub Actions, CI/CD pipelines, Docker, containerisation, deployment automation and rollback, structured logging, debugging.</dd>
+          <dt>Ways of working</dt>
+          <dd>Agile and Scrum, Jira, Confluence, code review, design review, technical documentation.</dd>
+          <dt>Currently developing</dt>
+          <dd>Java (object-oriented design and algorithms), C (systems programming).</dd>
+        </dl>
+      </section>
+
+      <section>
+        <h2>Education</h2>
+        <article class="entry">
+          <h3>Master of Science in Information Technology, RMIT University</h3>
+          <p class="muted small">Completed December 2025 · Melbourne, VIC</p>
+          <p>Relevant coursework: Software Engineering, Distributed Systems, Database Systems, Cloud Computing, Cybersecurity, Systems Analysis.</p>
+        </article>
+        <article class="entry">
+          <h3>Bachelor of Engineering in Computer Science, Kumaraguru College of Technology</h3>
+          <p class="muted small">April 2023 · Coimbatore, Tamil Nadu, India</p>
+          <p>Relevant coursework: Data Structures and Algorithms, Operating Systems, Computer Architecture, Computer Networks, Object-Oriented Programming.</p>
+        </article>
+      </section>
+    </main>
+  </div>
+  <script src="counter.js"></script>
+</body>
+</html>
